@@ -1,0 +1,87 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-page-bg: #001f08;
+  --color-surface: #114f0d;
+  --color-surface-light: #f3f0df;
+  --color-text: #ffffff;
+  --color-text-dark: #14310f;
+  --color-accent: #b7d63a;
+  --color-accent-strong: #7fb51e;
+  --color-border: #a7d129;
+  --color-muted: rgba(255, 255, 255, 0.8);
+  --page-max-width: 1440px;
+  --section-inline-padding: 40px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  font-family: Arial, sans-serif;
+  background-color: var(--color-page-bg);
+  color: var(--color-text);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.page {
+  min-height: 100vh;
+  background-color: var(--color-page-bg);
+}
+
+.content {
+  width: 100%;
+}
+
+.section-container {
+  width: 100%;
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+  padding-left: var(--section-inline-padding);
+  padding-right: var(--section-inline-padding);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --section-inline-padding: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  :root {
+    --section-inline-padding: 16px;
+  }
+}

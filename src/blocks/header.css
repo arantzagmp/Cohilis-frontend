@@ -1,0 +1,127 @@
+.header {
+  position: absolute;
+  top: 38px;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.header__container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.header__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  min-height: 64px;
+  padding: 10px 18px 10px 22px;
+  background-color: #032f08;
+  border-radius: 999px;
+}
+
+.header__logo-link {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.header__logo {
+  width: 110px;
+  height: auto;
+  display: block;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  flex: 1;
+}
+
+.header__link {
+  font-size: 13px;
+  line-height: 1.2;
+  color: rgba(255, 255, 255, 0.92);
+  transition: opacity 0.2s ease;
+}
+
+.header__link:hover,
+.header__link:focus {
+  opacity: 0.75;
+}
+
+.header__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 124px;
+  min-height: 42px;
+  padding: 10px 18px;
+  border: 1px solid #c6d93a;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #4b7f19 0%, #244d10 100%);
+  color: #f8f9ea;
+  font-size: 14px;
+  font-weight: 500;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.header__button:hover,
+.header__button:focus {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+@media screen and (max-width: 900px) {
+  .header {
+    top: 20px;
+  }
+
+  .header__container {
+    padding: 0 20px;
+  }
+
+  .header__bar {
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 28px;
+    padding: 16px;
+  }
+
+  .header__nav {
+    order: 3;
+    width: 100%;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header__container {
+    padding: 0 16px;
+  }
+
+  .header__bar {
+    min-height: auto;
+    gap: 16px;
+  }
+
+  .header__nav {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .header__link {
+    font-size: 14px;
+  }
+
+  .header__button {
+    width: 100%;
+  }
+}

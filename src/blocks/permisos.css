@@ -1,0 +1,54 @@
+.permisos-page {
+  background: #071c00;
+  color: #f5f1e8;
+  min-height: 100vh;
+  padding: 80px 24px;
+}
+
+.permisos-page__hero {
+  max-width: 1000px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.permisos-page__title {
+  margin: 0 0 12px;
+  font-size: 48px;
+}
+
+.permisos-page__subtitle {
+  margin: 0;
+  font-size: 16px;
+  opacity: 0.85;
+}
+
+.permisos-page__grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.permisos-page__card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.permisos-page__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+  .permisos-page__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .permisos-page__title {
+    font-size: 36px;
+  }
+}

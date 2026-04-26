@@ -1,0 +1,43 @@
+.datos-page {
+  background: #071c00;
+  color: #f5f1e8;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 24px;
+  text-align: center;
+}
+
+.datos-page__content {
+  max-width: 760px;
+}
+
+.datos-page__icon {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto 24px;
+}
+
+.datos-page__title {
+  margin: 0 0 16px;
+  font-size: 52px;
+  line-height: 1.1;
+}
+
+.datos-page__subtitle {
+  margin: 0;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .datos-page__title {
+    font-size: 34px;
+  }
+
+  .datos-page__subtitle {
+    font-size: 18px;
+  }
+}

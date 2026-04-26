@@ -3,7 +3,7 @@
   background: #002907;
   color: #f5f1e8;
   min-height: 100vh;
-  overflow: hidden;
+  overflow: clip;
 }
 
 .contact-page__content {

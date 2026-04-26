@@ -46,6 +46,7 @@ function Contactanos() {
               type="text"
               name="empresa"
               placeholder="Compañía"
+              required
               value={formData.empresa}
               onChange={handleChange}
             />
@@ -57,6 +58,7 @@ function Contactanos() {
               type="text"
               name="nombre"
               placeholder="José Ortiz"
+              required
               value={formData.nombre}
               onChange={handleChange}
             />
@@ -65,9 +67,10 @@ function Contactanos() {
           <label className="contact-page__field">
             <span>Teléfono</span>
             <input
-              type="text"
+              type="tel"
               name="telefono"
               placeholder="+52 000 000 0000"
+              required
               value={formData.telefono}
               onChange={handleChange}
             />
@@ -79,6 +82,7 @@ function Contactanos() {
               type="text"
               name="direccion"
               placeholder="Av."
+              required
               value={formData.direccion}
               onChange={handleChange}
             />
@@ -90,6 +94,7 @@ function Contactanos() {
               type="text"
               name="litros"
               placeholder="Lts"
+              required
               value={formData.litros}
               onChange={handleChange}
             />
@@ -101,6 +106,7 @@ function Contactanos() {
               type="text"
               name="fecha"
               placeholder="Día/Mes"
+              required
               value={formData.fecha}
               onChange={handleChange}
             />

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function ServiceCard({ title, link, icon, iconAlt }) {
   return (
     <article className="service-card">
@@ -5,9 +7,9 @@ function ServiceCard({ title, link, icon, iconAlt }) {
 
       <h3 className="service-card__title">{title}</h3>
 
-      <a href={link} className="service-card__link">
+      <Link to={link} className="service-card__link">
         Ver más
-      </a>
+      </Link>
     </article>
   );
 }

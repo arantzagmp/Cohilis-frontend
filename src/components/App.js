@@ -8,6 +8,7 @@ import Certifications from "./Certifications";
 import About from "./About";
 import Services from "./Services";
 import CTA from "./CTA";
+import ResourceSearch from "./ResourceSearch";
 
 import RecoleccionTransporte from "../pages/RecoleccionTransporte";
 import Acopio from "../pages/Acopio";
@@ -51,6 +52,7 @@ function Home() {
       <Certifications />
       <About />
       <Services services={services} />
+      <ResourceSearch />
       <CTA />
     </>
   );

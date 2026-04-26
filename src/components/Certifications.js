@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import certificationLogos from "../images/certifications/certification-logos.png";
 
 function Certifications() {
@@ -16,9 +17,9 @@ function Certifications() {
           />
         </div>
 
-        <a href="/permisos" className="certifications__button">
+        <Link to="/permisos" className="certifications__button">
           Ver más
-        </a>
+        </Link>
       </div>
     </section>
   );

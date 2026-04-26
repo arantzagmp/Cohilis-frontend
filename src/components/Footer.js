@@ -7,7 +7,7 @@ function Footer() {
         <div className="footer__brand">
           <img className="footer__logo-image" src={logoCohilis} alt="Cohilis S.A. de C.V." />
           <p className="footer__copyright">
-            © 2025 Derechos reservados por Cohilis S.A. de C.V.
+            © 2026 Derechos reservados por Cohilis S.A. de C.V.
           </p>
         </div>
 

@@ -16,9 +16,9 @@ function Certifications() {
           />
         </div>
 
-        <button type="button" className="certifications__button">
+        <a href="#permisos" className="certifications__button">
           Ver más
-        </button>
+        </a>
       </div>
     </section>
   );

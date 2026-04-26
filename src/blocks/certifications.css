@@ -1,6 +1,8 @@
 .certifications {
-  margin-top: -10px;
+  position: relative;
+  margin-top: -70px;
   padding: 0 0 72px;
+  z-index: 5;
 }
 
 .certifications__container {
@@ -12,7 +14,6 @@
   flex-direction: column;
   align-items: center;
 }
-
 .certifications__text {
   margin: 0 0 20px;
   font-size: 16px;

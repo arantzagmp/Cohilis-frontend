@@ -1,43 +1,44 @@
 .datos-page {
+  position: relative;
   background: #071c00;
   color: #f5f1e8;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 80px 24px;
-  text-align: center;
+  min-height: 620px;
+  padding: 220px 24px 120px;
+  overflow: hidden;
+}
+
+.datos-page__bg {
+  position: absolute;
+  right: -120px;
+  bottom: 70px;
+  width: 470px;
+  height: auto;
+  opacity: 0.85;
+  z-index: 1;
+  pointer-events: none;
 }
 
 .datos-page__content {
-  max-width: 760px;
-}
-
-.datos-page__icon {
-  width: 100px;
-  height: auto;
-  display: block;
-  margin: 0 auto 24px;
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  text-align: left;
 }
 
 .datos-page__title {
-  margin: 0 0 16px;
-  font-size: 52px;
+  max-width: 980px;
+  margin: 0 0 72px;
+  font-size: clamp(3rem, 6vw, 6rem);
   line-height: 1.1;
+  font-weight: 700;
+  color: #6ad62a;
 }
 
 .datos-page__subtitle {
   margin: 0;
-  font-size: 22px;
-  line-height: 1.5;
-}
-
-@media (max-width: 768px) {
-  .datos-page__title {
-    font-size: 34px;
-  }
-
-  .datos-page__subtitle {
-    font-size: 18px;
-  }
+  font-size: 32px;
+  line-height: 1.4;
+  color: #f5f1e8;
 }

@@ -4,13 +4,18 @@ import "../blocks/datos-enviados.css";
 function DatosEnviados() {
   return (
     <section className="datos-page">
+      <img
+        className="datos-page__bg"
+        src={checkGraphic}
+        alt=""
+        aria-hidden="true"
+      />
+
       <div className="datos-page__content">
-        <img
-          className="datos-page__icon"
-          src={checkGraphic}
-          alt="Datos enviados correctamente"
-        />
-        <h1 className="datos-page__title">Tus datos han sido enviados.</h1>
+        <h1 className="datos-page__title">
+          Tus datos han sido enviados.
+        </h1>
+
         <p className="datos-page__subtitle">
           Gracias, pronto te contactaremos.
         </p>

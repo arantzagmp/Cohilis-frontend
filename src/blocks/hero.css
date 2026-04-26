@@ -1,27 +1,43 @@
 .hero {
   position: relative;
-  min-height: 920px;
+  min-height: 520px;
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
+  overflow: hidden;
 }
 
 .hero__container {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 230px 40px 120px;
+  padding: 150px 40px 120px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 20, 7, 0.25) 0%,
+    rgba(0, 20, 7, 0.65) 48%,
+    var(--color-bg) 100%
+  );
+  z-index: 1;
 }
 
 .hero__content {
-  max-width: 760px;
+  max-width: 980px;
   margin: 0 auto;
   text-align: center;
 }
 
 .hero__title {
   margin: 0;
-  font-size: clamp(2.4rem, 4vw, 4.2rem);
+  font-size: clamp(2.8rem, 4.8vw, 5rem);
   line-height: 1.15;
   font-weight: 700;
 }
@@ -32,25 +48,21 @@
 
 @media screen and (max-width: 768px) {
   .hero {
-    min-height: 760px;
+    min-height: 560px;
   }
 
   .hero__container {
-    padding: 210px 20px 90px;
+    padding: 140px 20px 100px;
   }
 }
 
 @media screen and (max-width: 480px) {
   .hero {
-    min-height: 680px;
+    min-height: 520px;
     background-position: center center;
   }
 
   .hero__container {
-    padding: 190px 16px 70px;
-  }
-
-  .hero__content {
-    max-width: 100%;
+    padding: 130px 16px 80px;
   }
 }

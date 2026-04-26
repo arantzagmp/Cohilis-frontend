@@ -5,11 +5,12 @@ function Contactanos() {
   const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
-    nombre: "",
     empresa: "",
+    nombre: "",
     telefono: "",
-    email: "",
-    mensaje: "",
+    direccion: "",
+    litros: "",
+    fecha: "",
   });
 
   const handleChange = (e) => {
@@ -26,62 +27,87 @@ function Contactanos() {
 
     console.log("Datos enviados:", formData);
 
-   
     navigate("/datos-enviados");
   };
 
   return (
     <section className="contact-page">
-      <div className="contact-page__container">
-        <h1 className="contact-page__title">Contáctanos</h1>
+      <div className="contact-page__content">
+        <p className="contact-page__eyebrow">Contáctanos</p>
+
+        <h1 className="contact-page__title">
+          Envía tus datos para recibir un presupuesto.
+        </h1>
 
         <form className="contact-page__form" onSubmit={handleSubmit}>
-          <input
-            type="text"
-            name="nombre"
-            placeholder="Nombre"
-            value={formData.nombre}
-            onChange={handleChange}
-            required
-          />
+          <label className="contact-page__field">
+            <span>Nombre de la compañía</span>
+            <input
+              type="text"
+              name="empresa"
+              placeholder="Compañía"
+              value={formData.empresa}
+              onChange={handleChange}
+            />
+          </label>
 
-          <input
-            type="text"
-            name="empresa"
-            placeholder="Empresa"
-            value={formData.empresa}
-            onChange={handleChange}
-          />
+          <label className="contact-page__field">
+            <span>Nombre</span>
+            <input
+              type="text"
+              name="nombre"
+              placeholder="José Ortiz"
+              value={formData.nombre}
+              onChange={handleChange}
+            />
+          </label>
 
-          <input
-            type="tel"
-            name="telefono"
-            placeholder="Teléfono"
-            value={formData.telefono}
-            onChange={handleChange}
-            required
-          />
+          <label className="contact-page__field">
+            <span>Teléfono</span>
+            <input
+              type="text"
+              name="telefono"
+              placeholder="+52 000 000 0000"
+              value={formData.telefono}
+              onChange={handleChange}
+            />
+          </label>
 
-          <input
-            type="email"
-            name="email"
-            placeholder="Correo electrónico"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
+          <label className="contact-page__field">
+            <span>Dirección de recolección</span>
+            <input
+              type="text"
+              name="direccion"
+              placeholder="Av."
+              value={formData.direccion}
+              onChange={handleChange}
+            />
+          </label>
 
-          <textarea
-            name="mensaje"
-            placeholder="Mensaje"
-            value={formData.mensaje}
-            onChange={handleChange}
-            rows="5"
-            required
-          />
+          <label className="contact-page__field">
+            <span>Litros de aceite aproximados</span>
+            <input
+              type="text"
+              name="litros"
+              placeholder="Lts"
+              value={formData.litros}
+              onChange={handleChange}
+            />
+          </label>
+
+          <label className="contact-page__field">
+            <span>Fecha de recolección</span>
+            <input
+              type="text"
+              name="fecha"
+              placeholder="Día/Mes"
+              value={formData.fecha}
+              onChange={handleChange}
+            />
+          </label>
 
           <button type="submit" className="contact-page__button">
-            Enviar datos
+            Enviar
           </button>
         </form>
       </div>

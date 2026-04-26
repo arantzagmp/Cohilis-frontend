@@ -2,73 +2,88 @@
   background: #071c00;
   color: #f5f1e8;
   min-height: 100vh;
-  padding: 80px 24px;
+  padding: 170px 40px 0;
+  box-sizing: border-box;
 }
 
 .acopio-page__hero {
-  max-width: 900px;
-  margin: 0 auto 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
 .acopio-page__title-image {
-  width: 100%;
-  max-width: 520px;
+  width: 520px;
+  max-width: 90%;
   height: auto;
   display: block;
-  margin: 0 auto 20px;
 }
 
 .acopio-page__subtitle {
-  margin: 0;
+  max-width: 520px;
+  margin: 28px 0 0;
   font-size: 18px;
-  line-height: 1.6;
+  line-height: 1.35;
+  color: rgba(245, 241, 232, 0.65);
 }
 
-.acopio-page__content {
-  max-width: 1100px;
-  margin: 0 auto;
+.acopio-page__types {
+  width: 100%;
+  max-width: 680px;
+  margin: 120px auto 140px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 42px;
 }
 
-.acopio-page__heading {
-  margin: 0 0 40px;
+.acopio-page__type {
+  width: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  font-size: 32px;
-}
-
-.acopio-page__grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(220px, 1fr));
-  gap: 24px;
-}
-
-.acopio-page__card {
-  background: rgba(255, 255, 255, 0.06);
-  border-radius: 20px;
-  padding: 28px;
-  text-align: center;
+  background: transparent;
+  border: none;
+  padding: 0;
 }
 
 .acopio-page__icon,
 .acopio-page__icon-image {
-  width: 72px;
-  height: 72px;
-  margin: 0 auto 16px;
-  display: block;
+  width: 48px;
+  height: 48px;
+  margin: 0 0 22px;
+  object-fit: contain;
 }
 
 .acopio-page__icon {
   border-radius: 50%;
-  background: linear-gradient(180deg, #48c11f 0%, #ffee00 100%);
+  background: linear-gradient(180deg, #52d91d 0%, #fff500 100%);
 }
 
-.acopio-page__card p {
+.acopio-page__type p {
   margin: 0;
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.25;
+  color: #f5f1e8;
+}
+
+.acopio-page__content,
+.acopio-page__heading,
+.acopio-page__grid,
+.acopio-page__card {
+  display: none;
 }
 
 @media (max-width: 768px) {
-  .acopio-page__grid {
-    grid-template-columns: 1fr;
+  .acopio-page {
+    padding: 140px 24px 0;
+  }
+
+  .acopio-page__types {
+    flex-wrap: wrap;
+    gap: 48px 32px;
+    margin: 80px auto 100px;
   }
 }

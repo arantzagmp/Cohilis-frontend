@@ -9,9 +9,10 @@ function Permisos() {
   const permisos = [permiso1, permiso2, permiso3, permiso4, permiso5];
 
   return (
-    <section className="permisos-page">
+    <section className="permisos-page" id="permisos">
       <div className="permisos-page__hero">
         <h1 className="permisos-page__title">Nuestros permisos</h1>
+
         <p className="permisos-page__subtitle">
           ©️ Todos los derechos reservados a Cohilis SA de CV
         </p>

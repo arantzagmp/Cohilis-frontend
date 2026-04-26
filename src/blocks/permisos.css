@@ -2,53 +2,73 @@
   background: #071c00;
   color: #f5f1e8;
   min-height: 100vh;
-  padding: 80px 24px;
+  padding: 220px 40px 120px;
 }
 
 .permisos-page__hero {
-  max-width: 1000px;
-  margin: 0 auto 48px;
   text-align: center;
+  margin-bottom: 120px;
 }
 
 .permisos-page__title {
-  margin: 0 0 12px;
-  font-size: 48px;
+  margin: 0 0 28px;
+  font-size: clamp(3.5rem, 6vw, 6rem);
+  line-height: 1.1;
+  font-weight: 700;
+  color: #6ad62a;
 }
 
 .permisos-page__subtitle {
   margin: 0;
-  font-size: 16px;
-  opacity: 0.85;
+  font-size: 18px;
+  color: rgba(245, 241, 232, 0.82);
 }
 
 .permisos-page__grid {
-  max-width: 1200px;
+  max-width: 1050px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(2, minmax(260px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(3, 260px);
+  justify-content: center;
+  gap: 96px 100px;
 }
 
 .permisos-page__card {
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 20px;
-  padding: 20px;
+  width: 260px;
+  min-height: 260px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.permisos-page__card:nth-child(5) {
+  grid-column: span 2;
+  width: 520px;
 }
 
 .permisos-page__image {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 12px;
 }
 
-@media (max-width: 768px) {
-  .permisos-page__grid {
-    grid-template-columns: 1fr;
+@media (max-width: 900px) {
+  .permisos-page {
+    padding: 180px 24px 90px;
   }
 
-  .permisos-page__title {
-    font-size: 36px;
+  .permisos-page__grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .permisos-page__card,
+  .permisos-page__card:nth-child(5) {
+    width: 100%;
+    max-width: 320px;
+    grid-column: auto;
+    margin: 0 auto;
   }
 }

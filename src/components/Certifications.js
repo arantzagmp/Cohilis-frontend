@@ -16,7 +16,7 @@ function Certifications() {
           />
         </div>
 
-        <a href="#permisos" className="certifications__button">
+        <a href="/permisos" className="certifications__button">
           Ver más
         </a>
       </div>
